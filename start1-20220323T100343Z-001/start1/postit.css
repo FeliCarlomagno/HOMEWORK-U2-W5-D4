@@ -1,6 +1,5 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Indie flower;
 }
 
 .post-it {
@@ -75,56 +74,61 @@ body {
 
 .post-it:hover {
   transform: scale(1.2);
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .first {
-  animation: animationPost 1.5s linear;
+  animation: animationPost 1s linear;
 }
 
 .second {
-  animation: animationPost2 1.5s linear 3s;
+  animation: animationPost2 1s linear 2s;
 }
 
 .third {
-  animation: animationPost 1.5s linear 6s;
+  animation: animationPost 1s linear 4s;
 }
 
 .fourth {
-  animation: animationPost2 1.5s linear 8s;
+  animation: animationPost2 1s linear 6s;
 }
 
 .fifth {
-  animation: animationPost 1.5s linear 10s;
+  animation: animationPost 1s linear 8s;
 }
 
 .sixth {
-  animation: animationPost 1.5s linear 12s;
+  animation: animationPost 1s linear 10s;
 }
 .seventh {
-  animation: animationPost 1.5s linear 14s;
+  animation: animationPost 1.5s linear 12s;
 }
 .eighth {
-  animation: animationPost2 1.5s linear 16s;
+  animation: animationPost2 1s linear 14s;
 }
 
 @keyframes animationPost {
   0% {
     transform: translate(-300px);
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     transform: translate(0px);
     transform: rotate(-365deg);
+    opacity: 1;
   }
 }
 
 @keyframes animationPost2 {
   0% {
     transform: translate(-300px);
-    display: none;
+    opacity: 0;
   }
   100% {
     transform: translate(0px);
     transform: rotate(365deg);
+    opacity: 1;
   }
 }
